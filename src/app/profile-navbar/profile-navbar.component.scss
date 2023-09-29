@@ -1,0 +1,61 @@
+.navigation-tabs {
+    position: relative;
+    top: 50px;
+
+    .nav-tabs {
+        border-bottom: none;
+        border-top: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+        padding-left: 2%;
+
+    }
+
+    .tab-content {
+        padding-left: 2%;
+    }
+}
+
+/* Style for active tab text color and underline */
+.nav-link.active {
+    color: #2b68a0 !important;
+    border: none;
+    border-bottom: 3px solid #2b68a0;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Style for other non-active tab text */
+.nav-link {
+    color: #000 !important;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Remove the focus outline */
+.nav-link:focus {
+    outline: none;
+}
+
+
+/* Styles for laptop screens (1366x768) */
+@media (min-width: 1334px) {
+    .container {
+        max-width: none;
+    }
+}
+
+/* Styles for mobile screens (below 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-md-6 {
+        padding: 10px;
+    }
+}

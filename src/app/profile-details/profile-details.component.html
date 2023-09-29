@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row profile-details-container">
+        <div class="col-12 col-lg-8 px-3">
+            <div class="profile-details">
+                <h2 class="name">{{userData.name}}</h2>
+                <p class="address">{{userData.address}}<span class="position">{{userData.position}}</span> </p>
+                <p class="looking-for"><span class="position-test">Looking for :
+                    </span>{{userData.looking_for}}</p>
+                <p class="headline"> {{userData.headline}}</p>
+                <div class="button-container ">
+                    <button class="btn btn-primary add-to-profile">Add to Profile</button>
+                    <button class="btn btn-outline-primary edit-profile d-flex align-items-center">
+                        Edit Profile
+                        <img class="icons" src="../../assets/icons/edit-icon.svg">
+                    </button>
+                    <div class="three-dotted-icon">
+                        <img class="icons" src="../../assets/icons/info-icon.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 profile-info-container">
+            <div class="academic-info">
+                <div class="item">
+                    <img class="icons" src="../../assets/icons/institute.svg">
+                    <p class="p-text">Studied at <span>{{userData.studied_at}}</span></p>
+                </div>
+                <div class="item">
+                    <img class="icons" src="../../assets/icons/award.svg">
+                    <p>{{userData.cgpa}}</p>
+                </div>
+                <div class="item">
+                    <img class="icons" src="../../assets/icons/ielts-test.svg">
+                    <p>{{userData.ielts_test}}</p>
+                </div>
+                <div class="item align-items-start">
+                    <img class="icons" src="../../assets/icons/participate.svg">
+                    <p>{{userData.participation_in}} <span>{{userData.participation_by}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

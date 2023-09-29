@@ -1,0 +1,143 @@
+.profile-details-container {
+    padding: 50px 30px 0 30px;
+
+    @media (max-width:768px) {
+        padding-top: 0;
+    }
+}
+
+.profile-details {
+    color: #000000;
+
+    .name {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .address,
+    .position {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .looking-for {
+        font-size: 14px;
+        font-weight: normal;
+        color: #2B68A0;
+        line-height: 8px;
+
+        .position-test {
+            color: #454545;
+        }
+    }
+
+    .headline {
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 80%;
+    }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        max-width: 300px;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    .btn-primary.add-to-profile {
+        background: #2b68a0;
+        color: white;
+        border: none;
+    }
+
+    .btn-outline-primary.edit-profile {
+        background: #ffffff;
+        color: #2b68a0;
+        border: 1px solid #2b68a0;
+        gap: 7px;
+    }
+
+    .fa.fa-pencil {
+        margin-left: 5px;
+    }
+
+    .three-dotted-icon {
+        font-size: 20px;
+    }
+}
+
+.profile-info-container {
+    .academic-info {
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 310px;
+
+            .icons {
+                width: 17.2px;
+                height: 18.4px;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+                color: #000000;
+                padding-left: 10px;
+
+                span {
+                    color: #2B68A0;
+                }
+            }
+
+            .p-text {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                span {
+                    color: #2B68A0;
+                }
+            }
+        }
+    }
+}
+
+
+/* Styles for laptop screens (1366x768) */
+@media (min-width: 1334px) {
+    .container {
+        max-width: none;
+    }
+}
+
+/* Styles for tablet screens (992px) */
+@media (max-width: 992px) {
+    .profile-details {
+        gap: 10px;
+    }
+
+    .profile-details-container {
+        gap: 30px;
+    }
+
+    .headline {
+        max-width: 93%;
+        text-align: justify;
+    }
+}
+
+/* Styles for mobile screens (below 375px) */
+@media (max-width: 375px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-md-6 {
+        padding: 10px;
+    }
+}
